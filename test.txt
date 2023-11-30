@@ -1,0 +1,45 @@
+ <p class="para">
+          Os humanistas eram os estudiosos da cultura antiga que se dedicavam,
+          sobretudo, aos estudos dos textos da antiguidade clássica
+          greco-romana.
+        </p>
+
+        <p class="para">
+          Todos eles foram influenciados por características do período como o
+          culto às línguas e às literaturas greco-latinas (modelo clássico).
+        </p>
+
+        <p class="para">
+          Dentre os grandes representantes da literatura humanista estão:
+        </p>
+
+        <p class="para">
+          Francesco Petrarca (1304-1374) - poeta italiano fundador do humanismo
+          e autor das obras: Cancioneiro e o Triunfo; Meu livro secreto;
+          Itinerário para a Terra Santa.
+        </p>
+
+        <p class="para">
+          Dante Alighieri (1265-1321) - poeta e político italiano, autor das
+          obras: A Divina Comédia; Sobre a Língua Vulgar; Vida Nova.
+        </p>
+
+        <p class="para">
+          Giovanni Boccaccio (1313-1375) - poeta italiano e autor das obras:
+          Decamerão; A canção bucólica; Mulheres famosas.
+        </p>
+
+        <p class="para">
+          Erasmo de Roterdã (1466-1536) - teólogo e filósofo neerlandês, autor
+          das obras: Elogio da Loucura; Manual do Cavaleiro Cristão; Colóquios.
+        </p>
+
+        <p class="para">
+          Thomas More (1478-1535) - escritor e filósofo inglês, autor das obras:
+          Utopia; Tratado sobre a Paixão de Cristo; Súplica das Almas.
+        </p>
+
+        <p class="para">
+          Michel de Montaigne (1533-1592) - filósofo e escritor francês, autor
+          de uma única obra reunida em 3 volumes: Ensaios.
+        </p>

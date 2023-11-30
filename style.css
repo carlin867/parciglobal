@@ -39,12 +39,12 @@ header menu ul li{
     display: inline-block;
     padding: 19px;
     margin: 0px;
+    transition: 0.4s linear;
 }
 /*para quando o mouse passar por cima os li do menu ficar com cor de fundo cinza e o cursor virar a mãozinha*/
 header menu ul li:hover{
     background-color: gray;
     cursor: pointer;
-    transition: 0.6s;
     scale: 1.2;
 }
 /*para os links não ficarem azuis e sem sublinhado*/
@@ -54,24 +54,89 @@ header menu ul li a{
 }
 
 
+.header{
+    font-family: 'work-sans';
+    width: 100%;
+    color: white;
+    background-color: #24252ade;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    z-index: 1;
+}
+/*tornar o h1 "humanismo" centralizado na header*/
+.header h1{
+    display: flex;
+    align-items: center;
+}
+/*para o menu ter um distanciamento do h1 no header*/
+.header menu{
+    padding-left: 30px;
+}
+/*para o li ficar sem margin e com o display inline-block e um preenchimento interno de 19px*/
+.header menu ul li{
+    display: inline-block;
+    padding: 19px;
+    margin: 0px;
+    transition: 0.4s linear;
+}
+/*para quando o mouse passar por cima os li do menu ficar com cor de fundo cinza e o cursor virar a mãozinha*/
+.header menu ul li:hover{
+    background-color: gray;
+    cursor: pointer;
+    scale: 1.2;
+}
+/*para os links não ficarem azuis e sem sublinhado*/
+.header menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
 article{
     
     font-family: 'work-sans';
-    margin-left: 5px;
-    width: 500px;
+    margin-left: 30px;
+    width: 750px;
     background-color: white;
     z-index: 2;
 }
 .titulo{
     font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .para{
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .lista{
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 10px;
+}
+.imagens{
+    display: inline-block;
+    text-align: center; 
+    transition: 0.7s;
+    margin: 20px 20px 0px 10px;
+}
+.imagens:hover{
+    background-color: gray;
+    scale: 1.1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.imagens img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+.voltar{
+    width: 40px;
 }
 
