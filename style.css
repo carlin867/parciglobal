@@ -3,6 +3,10 @@
     font-family: 'work-sans';
     src: url(fontes/Work_Sans/WorkSans-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: 'open-sans';
+    src: url(fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 
 *{
     padding: 0px;
@@ -16,7 +20,7 @@ body{
 
 /*Para mudar a cor de fundo do menu e do h1 e colocar display flex e da um espaçamento entre o h1 e o menu*/
 header{
-    font-family: 'work-sans';
+    font-family: 'open-sans';
     width: 100%;
     color: white;
     background-color: #24252a;
@@ -58,7 +62,7 @@ header menu ul li a{
     font-family: 'work-sans';
     width: 100%;
     color: white;
-    background-color: #24252ade;
+    background-color: #24252a;
     display: flex;
     justify-content: space-around;
     padding: 15px;
@@ -117,7 +121,7 @@ article{
     margin-left: 30px;
     margin-bottom: 20px;
 }
-#final{
+.final{
     padding-bottom: 10px;
 }
 .imagens{
@@ -172,5 +176,16 @@ article{
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 20px;
     
+}
+.citacoes{
+    width: 400px;
+    text-align: justify;
+    margin: 0 auto;
+}
+.citacoes::after{
+    content: "''";
+}
+.citacoes::before{
+    content: "''";
 }
 
