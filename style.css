@@ -80,7 +80,7 @@ header menu ul li a{
 /*para o li ficar sem margin e com o display inline-block e um preenchimento interno de 19px*/
 .header menu ul li{
     display: inline-block;
-    padding: 19px;
+    padding: 20px;
     margin: 0px;
     transition: 0.4s linear;
 }
@@ -181,11 +181,46 @@ article{
     width: 400px;
     text-align: justify;
     margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .citacoes::after{
     content: "''";
 }
 .citacoes::before{
     content: "''";
+}
+.rodape{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 30px;
+    font-family: 'open-sans';
+}
+.redes-sociais li{
+    display: inline-block;
+    padding: 10px;
+}
+.redes-sociais li button{
+    font-family: 'open-sans';
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 1000px;
+    transition: 0.5s;
+}
+.redes-sociais li button:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    scale: 1.1;
+}
+.redes-sociais li button img{
+    width: 30px;
+}
+
+.logo img{
+    width: 50px;
 }
 
