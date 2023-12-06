@@ -25,13 +25,16 @@
       </header>
       <header class="menu-h">
         <h1>Humanismo</h1>
-        <div class="botao"><img src="open.svg" alt="" onclick="botaoHamburger()"></div>
-          <ul>
-            <li><a href="#Car">Características</a></li>
-            <li><a href="#cont">Contexto Histórico</a></li>
-            <li><a href="#autores">Autores</a></li>
-          </ul>
+        <div class="botao"><img src="open.svg" alt="" onclick="botaoHamburger()">
+        </div>
+         
+          
       </header>
+      <ul class="menu">
+        <li><a href="#Car"><button>Características</button></a></li>
+        <li><a href="#cont"><button>Contexto Histórico</button></a></li>
+        <li><a href="#autores"><button>Autores</button></a></li>
+      </ul>
     </div>
     
     
@@ -221,6 +224,19 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      function botaoHamburger(){
+        let menu = document.querySelector('.menu')
+        let botao = document.querySelector('.botao')
+        if( menu.style.display == "block"){
+          menu.style.display = "none";
+        }else{
+          menu.style.display = "block";
+          
+        }
+      }
+    </script>
 
   </body>
 </html>

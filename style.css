@@ -20,6 +20,8 @@ body{
 /* Menu-Principal */
 /*Para mudar a cor de fundo do menu e do h1 e colocar display flex e da um espaçamento entre o h1 e o menu*/
 header{
+    position: fixed;
+    width: 100%;
     font-family: 'open-sans';
     color: white;
     background-color: #24252a;
@@ -27,6 +29,7 @@ header{
     justify-content: space-around;
     padding: 15px;
     z-index: 1;
+    
 }
 /*tornar o h1 "humanismo" centralizado na header*/
 header h1{
@@ -65,6 +68,8 @@ header menu ul li a{
     justify-content: space-around;
     padding: 15px;
     z-index: 1;
+    position: fixed;
+    width: 100%;
 }
 /*tornar o h1 "humanismo" centralizado na header*/
 .header h1{
@@ -101,7 +106,7 @@ header menu ul li a{
     max-width: 750px;
     min-width: 320px;
     background-color: white;
-    z-index: 2;
+    z-index: 1;
     border-radius: 8px;
 }
 .titulo{
@@ -224,16 +229,89 @@ header menu ul li a{
 .menu-h{
     display: none;
 }
-@media (max-width: 640px){
+.menu{
+    display: none;
+}
+
+@media (max-width: 680px){
     header{
         display: none;
     }
     .menu-h{
         display: block;
     }
+    .menu-h{
+        font-family: 'work-sans';
+        color: white;
+        background-color: #24252a;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        z-index: 1;
+    }
+    
+    .menu-h h1{
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-h menu{
+        padding-left: 30px;
+    }
+    
+    .menu-h ul li{
+        display: flex;
+        padding: 20px;
+        margin: 0px;
+        transition: 0.4s linear;
+    }
+    
+    .menu-h  ul li:hover{
+        background-color: gray;
+        cursor: pointer;
+        scale: 1.2;
+    }
+    
+    .menu-h  ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .menu{
+        display: none;
+    }
+    .menu li a button{
+        background: none;
+        border: none;
+        font-family: 'open-sans';
+        padding: 10px;
+    }
+    .menu{
+        background-color: #f9f9f9;
+        position: absolute;
+        left: 67%;
+        top: 10%;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        text-align: center;
+    }
+    .menu li{
+        list-style-type: none;
+    }
+    .menu li:hover{
+        background-color: gray;
+        cursor: pointer;
+    }
+    .menu li a button:hover{
+        cursor: pointer;
+    }
     .botao{
         display: block; 
-
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .botao:hover{
+        scale: 1.1;
     }
 }
 
