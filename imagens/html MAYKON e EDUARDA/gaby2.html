@@ -1,0 +1,43 @@
+<html>
+<body>
+<script>
+function jump ( ) {
+    document.write ("<br>");
+    document.write ("<br>");
+  } function text (x) {
+    document.write (x);
+jump ( );
+        }
+ var usuarioCadastro = "Maria Gabriely";
+ var senhaCadastro = 242225 ;
+ var tentUsuario = 3 ;
+ var tentSenha = 3 ;
+for (tentUsuario;tentUsuario >= 0; tentUsuario-- ) {
+ var usuarioDigitando = prompt ('Bem-vindo. digite o usuario');
+if (usuarioDigitando == usuarioCadastro) {
+ var usuarioOK= true;
+  break; 
+       }    
+else { 
+    alert ('Usuario incorreto. Voce possui'+ tentUsuario + 'tentativa(s) restante (s).')
+ }
+ } 
+for (tentSenha;tentSenha >= 0; tentSenha-- ) {
+ var SenhaDigitando = prompt ('Bem-vindo. digite a senha');
+if (SenhaDigitando == SenhaCadastro) {
+ var senhaOK = true;
+  break; 
+      }    
+else { 
+    alert ('Senha incorreta. Voce possui'+ tentSenha + 'tentativa(s) restante (s).')
+ }
+ } 
+if (usuarioOK == true&& senhaOK == true) {
+text ('Credencias Corretas! Seja Bem Vindo,' + usuarioCadastrado + '!');
+
+ }
+else {
+text ('Voce esgotou todas as tentativas. Login bloqueado!');
+ }
+</script>
+</html>

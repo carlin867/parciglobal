@@ -1,0 +1,45 @@
+<html> 
+<head>
+</head>
+<body>
+<script type = "text/javascript"> 
+  function jump () { 
+     document.write ("<br>");
+     document.write ("<br>");
+      } function text (x) {
+        document.write (x); 
+jump(); 
+        }
+  var  usuarioCadastro = "Eduarda";
+  var  senhaCadastro = 12345 ;
+  var  tentUsuario = 3 ;
+  var  tentSenha = 3 ; 
+for ( tentUsuario; tentUsuario >= 0; tentUsuario -- ){
+  var  usuarioDigitado = prompt('Bem-vindo.Digite o usuario');
+if (usuarioDigitado == usuarioCadastro){ 
+ var usuarioOK = true; 
+  break;
+       }
+else{ 
+    alert('Usuario incorreto. Voce possui' + tentUsuario + 'tentativa(s) restante(s).')
+ }
+ }
+for (tentSenha; tentSenha >= 0; tentSenha -- ){
+  var  SenhaDigitada = prompt('Bem vindo. digite a senha');
+if (SenhaDigitada == senhaCadastro){ 
+  var senhaOK = true ; 
+break;
+    }
+else {
+    alert ('Senha incorreta. Voce possui' + tentSenha + 'tentativa(s) restante(s).')
+}
+}
+ if (usuarioOK == true && senhaOK == true){ 
+  text ('Credenciais corretas!Seja bem-vindo,' + usuarioCadastro + '!'); 
+}
+else { 
+text ('Voce esgotou todas as tentativas. Log-in boqueado!');
+}
+</script>
+</body>
+</html> 

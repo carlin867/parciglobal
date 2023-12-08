@@ -7,10 +7,18 @@
     font-family: 'open-sans';
     src: url(fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+@font-face {
+    font-family: 'permanent-marker';
+    src: url(fontes/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
 
 *{
     padding: 0px;
     margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 30px;
 }
 /*Mudar cor de fundo do site*/
 body{
@@ -18,45 +26,85 @@ body{
 }
 
 /* Menu-Principal */
-/*Para mudar a cor de fundo do menu e do h1 e colocar display flex e da um espaçamento entre o h1 e o menu*/
 header{
-    position: fixed;
-    width: 100%;
-    font-family: 'open-sans';
-    color: white;
     background-color: #24252a;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
+    box-shadow: 0px 3px 10px #464646;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1;
-    
 }
-/*tornar o h1 "humanismo" centralizado na header*/
-header h1{
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: 'permanent-marker';
+}
+.logo h1{
+    color: white;
+}
+.lista-menu{
     display: flex;
     align-items: center;
 }
-/*para o menu ter um distanciamento do h1 no header*/
-header menu{
-    padding-left: 30px;
+.lista-menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
-/*para o li ficar sem margin e com o display inline-block e um preenchimento interno de 19px*/
-header menu ul li{
-    display: inline-block;
-    padding: 19px;
-    margin: 0px;
-    transition: 0.4s linear;
+.item-menu{
+    margin: 0 15px;
 }
-/*para quando o mouse passar por cima os li do menu ficar com cor de fundo cinza e o cursor virar a mãozinha*/
-header menu ul li:hover{
-    background-color: gray;
-    cursor: pointer;
-    scale: 1.2;
-}
-/*para os links não ficarem azuis e sem sublinhado*/
-header menu ul li a{
+.item-link{
     text-decoration: none;
+    font-size: 1.15rem;
     color: white;
+}
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+/* Menu-Mobile */
+@media screen and (max-width: 750px)  {
+    .menu{
+        padding: 1.4rem;
+    }
+    .item-menu{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .item-menu{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .item-menu .item-link:hover{
+        color: orange;
+    }
+    .open{
+        display: block;
+    }
 }
 
 /* Menu-Autores */
@@ -106,8 +154,13 @@ header menu ul li a{
     max-width: 750px;
     min-width: 320px;
     background-color: white;
-    z-index: 1;
     border-radius: 8px;
+    position: relative;
+    top: 100px;
+}
+footer{
+    position: relative;
+    top: 71px;
 }
 .titulo{
     font-size: 2em;
@@ -158,9 +211,7 @@ header menu ul li a{
     margin: 0 auto;
     width: 750px;
     background-color: white;
-    z-index: 2;
     border-radius: 8px;
-    
 }
 .imagens-autores{
     margin: 20px 20px 0px 10px;
@@ -179,6 +230,12 @@ header menu ul li a{
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 20px;
     
+}
+@media screen and (max-width:750px){
+    .imagens{
+        display: inline-block;
+        margin-left: 90px;
+    }
 }
 .citacoes{
     width: 400px;
@@ -223,97 +280,6 @@ header menu ul li a{
     width: 30px;
 }
 
-.botao{
-    display: none;
-}
-.menu-h{
-    display: none;
-}
-.menu{
-    display: none;
-}
-
-@media (max-width: 680px){
-    header{
-        display: none;
-    }
-    .menu-h{
-        display: block;
-    }
-    .menu-h{
-        font-family: 'work-sans';
-        color: white;
-        background-color: #24252a;
-        display: flex;
-        justify-content: space-around;
-        padding: 15px;
-        z-index: 1;
-    }
-    
-    .menu-h h1{
-        display: flex;
-        align-items: center;
-    }
-    
-    .menu-h menu{
-        padding-left: 30px;
-    }
-    
-    .menu-h ul li{
-        display: flex;
-        padding: 20px;
-        margin: 0px;
-        transition: 0.4s linear;
-    }
-    
-    .menu-h  ul li:hover{
-        background-color: gray;
-        cursor: pointer;
-        scale: 1.2;
-    }
-    
-    .menu-h  ul li a{
-        text-decoration: none;
-        color: white;
-    }
-    .menu{
-        display: none;
-    }
-    .menu li a button{
-        background: none;
-        border: none;
-        font-family: 'open-sans';
-        padding: 10px;
-    }
-    .menu{
-        background-color: #f9f9f9;
-        position: absolute;
-        left: 67%;
-        top: 10%;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        text-align: center;
-    }
-    .menu li{
-        list-style-type: none;
-    }
-    .menu li:hover{
-        background-color: gray;
-        cursor: pointer;
-    }
-    .menu li a button:hover{
-        cursor: pointer;
-    }
-    .botao{
-        display: block; 
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .botao:hover{
-        scale: 1.1;
-    }
-}
 
 
 

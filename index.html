@@ -14,27 +14,34 @@
   <body>
     <div class="menu-responsivo">
       <header>
-        <h1>Humanismo</h1>
-        <menu>
+        <nav class="menu">
+
+            <div class="logo">
+                <h1>Humanismo</h1>
+            </div>
+
+            <div class="lista-menu">
+                <ul>
+                    <li class="item-menu"><a href="#cont" class="item-link">Contexto Histórico</a></li>
+                    <li class="item-menu"><a href="#Car" class="item-link">Características</a></li>
+                    <li class="item-menu"><a href="#autores" class="item-link">Autores</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="mobile-menu-icon">
+                <button onclick="botaoHamburger()"><img class="icon" src="open.svg" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
           <ul>
-            <li><a href="#Car">Características</a></li>
-            <li><a href="#cont">Contexto Histórico</a></li>
-            <li><a href="#autores">Autores</a></li>
-          </ul>
-        </menu>
-      </header>
-      <header class="menu-h">
-        <h1>Humanismo</h1>
-        <div class="botao"><img src="open.svg" alt="" onclick="botaoHamburger()">
-        </div>
-         
-          
-      </header>
-      <ul class="menu">
-        <li><a href="#Car"><button>Características</button></a></li>
-        <li><a href="#cont"><button>Contexto Histórico</button></a></li>
-        <li><a href="#autores"><button>Autores</button></a></li>
-      </ul>
+            <li class="item-menu"><a href="#cont" class="item-link">Contexto Histórico</a></li>
+            <li class="item-menu"><a href="#Car" class="item-link">Características</a></li>
+            <li class="item-menu"><a href="#autores" class="item-link">Autores</a></li>
+        </ul>
+            
+    </header>
     </div>
     
     
@@ -227,14 +234,14 @@
 
     <script>
       function botaoHamburger(){
-        let menu = document.querySelector('.menu')
-        let botao = document.querySelector('.botao')
-        if( menu.style.display == "block"){
-          menu.style.display = "none";
-        }else{
-          menu.style.display = "block";
-          
-        }
+        let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "open.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "close.svg";
+    }
       }
     </script>
 
