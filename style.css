@@ -8,8 +8,8 @@
     src: url(fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 @font-face {
-    font-family: 'permanent-marker';
-    src: url(fontes/Permanent_Marker/PermanentMarker-Regular.ttf);
+    font-family: 'logo-font';
+    src: url(fontes/Hedvig_Letters_Serif/HedvigLettersSerif-Regular-VariableFont_opsz.ttf);
 }
 
 *{
@@ -18,7 +18,7 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding: 30px;
+    scroll-padding: 100px;
 }
 /*Mudar cor de fundo do site*/
 body{
@@ -44,7 +44,7 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    font-family: 'permanent-marker';
+    font-family: 'logo-font';
 }
 .logo h1{
     color: white;
@@ -66,6 +66,9 @@ header{
     font-size: 1.15rem;
     color: white;
 }
+.item-menu .item-link:hover{
+    color: orange;
+}
 .mobile-menu-icon{
     display: none;
 }
@@ -75,6 +78,10 @@ header{
 }
 /* Menu-Mobile */
 @media screen and (max-width: 750px)  {
+    html{
+        scroll-behavior: smooth;
+        scroll-padding: 240px;
+    }
     .menu{
         padding: 1.4rem;
     }
@@ -162,6 +169,23 @@ footer{
     position: relative;
     top: 71px;
 }
+.text-img{
+    display: flex;
+    justify-content: center;
+}
+.text-img p{
+    margin-top: 5px;
+}
+.text-img img{
+    width: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+    transition: 2s;
+}
+.text-img img:hover{
+    scale: 2;
+    margin-left: 50px;
+}
 .titulo{
     font-size: 2em;
     text-align: center;
@@ -234,7 +258,7 @@ footer{
 @media screen and (max-width:750px){
     .imagens{
         display: inline-block;
-        margin-left: 90px;
+        margin-left: 32%;
     }
 }
 .citacoes{
